@@ -1,0 +1,228 @@
+[INFO ] [2022-05-06 09:49:45,286] Login - 01: Click To 'Log in' Link
+[INFO ] [2022-05-06 09:49:45,936] Login - 01: Enter To Email textbox with value is 'autoclass1497@gmail.com'
+[INFO ] [2022-05-06 09:49:46,087] Login - 01: Enter To Password textbox with value is '123456'
+[INFO ] [2022-05-06 09:49:46,181] Login - 01: Click To 'Log in' button
+[INFO ] [2022-05-06 09:49:46,768] Login - 01: Verify 'My Account' link is displayed
+[INFO ] [2022-05-06 09:50:16,815] Register - 01: Click To 'Register' Link
+[INFO ] [2022-05-06 09:50:18,999] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[INFO ] [2022-05-06 09:50:19,102] Register - 03: Enter To Lastname textbox with value is 'FC'
+[INFO ] [2022-05-06 09:50:19,190] Register - 04: Enter To Email textbox with value is 'autoclass1497@gmail.com'
+[INFO ] [2022-05-06 09:50:19,296] Register - 05: Enter To Password textbox with value is '123456'
+[INFO ] [2022-05-06 09:50:19,376] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[INFO ] [2022-05-06 09:50:19,459] Register - 07: Click To 'Register' button
+[INFO ] [2022-05-06 09:50:20,375] Register - 08: Verify Successful Registration Message is displayed
+[INFO ] [2022-05-06 09:50:20,446] Register - 09: Click To 'Log out' Link
+[INFO ] [2022-05-06 09:50:42,438] Register - 01: Click To 'Register' Link
+[INFO ] [2022-05-06 09:50:43,111] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[INFO ] [2022-05-06 09:50:43,260] Register - 03: Enter To Lastname textbox with value is 'FC'
+[INFO ] [2022-05-06 09:50:43,361] Register - 04: Enter To Email textbox with value is 'autoclass4146@gmail.com'
+[INFO ] [2022-05-06 09:50:43,477] Register - 05: Enter To Password textbox with value is '123456'
+[INFO ] [2022-05-06 09:50:43,560] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[INFO ] [2022-05-06 09:50:43,675] Register - 07: Click To 'Register' button
+[INFO ] [2022-05-06 09:50:44,626] Register - 08: Verify Successful Registration Message is displayed
+[INFO ] [2022-05-06 09:50:44,690] Register - 09: Click To 'Log out' Link
+[INFO ] [2022-05-06 09:50:45,529] Login - 01: Click To 'Log in' Link
+[INFO ] [2022-05-06 09:50:46,120] Login - 01: Enter To Email textbox with value is 'autoclass4146@gmail.com'
+[INFO ] [2022-05-06 09:50:46,223] Login - 01: Enter To Password textbox with value is '123456'
+[INFO ] [2022-05-06 09:50:46,309] Login - 01: Click To 'Log in' button
+[INFO ] [2022-05-06 09:50:47,156] Login - 01: Verify 'My Account' link is displayed
+[INFO ] [2022-05-06 09:50:47,250] Login - 01: Click To 'My Account' Link
+[INFO ] [2022-05-06 09:50:47,854] Login - 01: Verify 'My Customer Infor' Page is displayed
+[2022-05-06 10:01:04,484] Register - 01: Click To 'Register' Link
+[2022-05-06 10:01:06,362] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-06 10:01:06,487] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-06 10:01:06,575] Register - 04: Enter To Email textbox with value is 'autoclass6928@gmail.com'
+[2022-05-06 10:01:06,736] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-06 10:01:06,843] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-06 10:01:06,938] Register - 07: Click To 'Register' button
+[2022-05-06 10:01:09,497] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-06 10:01:09,555]  -------------------------- FAILED -------------------------- 
+[2022-05-06 10:01:09,556] Register - 09: Click To 'Log out' Link
+[2022-05-06 10:01:10,356] Login - 01: Click To 'Log in' Link
+[2022-05-06 10:01:12,497] Login - 01: Enter To Email textbox with value is 'autoclass6928@gmail.com'
+[2022-05-06 10:01:12,640] Login - 01: Enter To Password textbox with value is '123456'
+[2022-05-06 10:01:12,756] Login - 01: Click To 'Log in' button
+[2022-05-06 10:01:13,644] Login - 01: Verify 'My Account' link is displayed
+[2022-05-06 10:01:13,736]  -------------------------- PASSED -------------------------- 
+[2022-05-06 10:01:13,736] Login - 01: Click To 'My Account' Link
+[2022-05-06 10:01:14,326] Login - 01: Verify 'My Customer Infor' Page is displayed
+[2022-05-06 10:01:14,401]  -------------------------- PASSED -------------------------- 
+[2022-05-06 14:33:02,245] Register - 01: Click To 'Register' Link
+[2022-05-06 14:33:03,021] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-06 14:33:03,175] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-06 14:33:03,292] Register - 04: Enter To Email textbox with value is 'autoclass8074@gmail.com'
+[2022-05-06 14:33:03,429] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-06 14:33:03,540] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-06 14:33:03,633] Register - 07: Click To 'Register' button
+[2022-05-06 14:33:04,609] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-06 14:33:04,685]  -------------------------- FAILED -------------------------- 
+[2022-05-06 14:33:04,685] Register - 09: Click To 'Log out' Link
+[2022-05-06 14:33:05,776] Login - 01: Click To 'Log in' Link
+[2022-05-06 14:33:06,338] Login - 01: Enter To Email textbox with value is 'autoclass8074@gmail.com'
+[2022-05-06 14:33:06,455] Login - 01: Enter To Password textbox with value is '123456'
+[2022-05-06 14:33:06,571] Login - 01: Click To 'Log in' button
+[2022-05-06 14:33:07,539] Login - 01: Verify 'My Account' link is displayed
+[2022-05-06 14:33:07,638]  -------------------------- PASSED -------------------------- 
+[2022-05-06 14:33:07,639] Login - 01: Click To 'My Account' Link
+[2022-05-06 14:33:08,237] Login - 01: Verify 'My Customer Infor' Page is displayed
+[2022-05-06 14:33:08,306]  -------------------------- PASSED -------------------------- 
+[2022-05-06 14:57:49,995] Register - 01: Click To 'Register' Link
+[2022-05-06 14:57:50,700] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-06 14:57:50,837] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-06 14:57:50,939] Register - 04: Enter To Email textbox with value is 'autoclass4639@gmail.com'
+[2022-05-06 14:57:51,054] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-06 14:57:51,138] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-06 14:57:51,246] Register - 07: Click To 'Register' button
+[2022-05-06 14:57:52,313] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-06 14:57:52,368]  -------------------------- FAILED -------------------------- 
+[2022-05-06 14:57:52,369] Register - 09: Click To 'Log out' Link
+[2022-05-06 14:57:53,262] Login - 01: Click To 'Log in' Link
+[2022-05-06 14:57:53,889] Login - 01: Enter To Email textbox with value is 'autoclass4639@gmail.com'
+[2022-05-06 14:57:53,990] Login - 01: Enter To Password textbox with value is '123456'
+[2022-05-06 14:57:54,075] Login - 01: Click To 'Log in' button
+[2022-05-06 14:57:55,046] Login - 01: Verify 'My Account' link is displayed
+[2022-05-06 14:57:55,149]  -------------------------- PASSED -------------------------- 
+[2022-05-06 14:57:55,149] Login - 01: Click To 'My Account' Link
+[2022-05-06 14:57:56,012] Login - 01: Verify 'My Customer Infor' Page is displayed
+[2022-05-06 14:57:56,095]  -------------------------- PASSED -------------------------- 
+[2022-05-06 15:17:55,090] Register - 01: Click To 'Register' Link
+[2022-05-06 15:17:55,787] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-06 15:17:55,941] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-06 15:17:56,066] Register - 04: Enter To Email textbox with value is 'autoclass1445@gmail.com'
+[2022-05-06 15:17:56,201] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-06 15:17:56,305] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-06 15:17:56,417] Register - 07: Click To 'Register' button
+[2022-05-06 15:17:57,322] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-06 15:17:57,385]  -------------------------- FAILED -------------------------- 
+[2022-05-06 15:17:57,386] Register - 09: Click To 'Log out' Link
+[2022-05-06 15:21:04,103] Register - 01: Click To 'Register' Link
+[2022-05-06 15:21:04,821] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-06 15:21:04,982] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-06 15:21:05,109] Register - 04: Enter To Email textbox with value is 'autoclass3218@gmail.com'
+[2022-05-06 15:21:05,233] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-06 15:21:05,323] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-06 15:21:05,413] Register - 07: Click To 'Register' button
+[2022-05-06 15:21:06,339] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-06 15:21:06,394]  -------------------------- FAILED -------------------------- 
+[2022-05-06 15:21:06,395] Register - 09: Click To 'Log out' Link
+[2022-05-11 09:20:57,272] Login - 01: Click To 'Log in' Link
+[2022-05-11 09:20:58,213] Login - 01: Enter To Email textbox with value is 'autoclass7233@gmail.com'
+[2022-05-11 09:20:58,342] Login - 01: Enter To Password textbox with value is '123456'
+[2022-05-11 09:20:58,465] Login - 01: Click To 'Log in' button
+[2022-05-11 09:20:59,431] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:20:59,524]  -------------------------- PASSED -------------------------- 
+[2022-05-11 09:20:59,524] Login - 01: Click To 'My Account' Link
+[2022-05-11 09:21:00,126] Login - 01: Verify 'My Customer Infor' Page is displayed
+[2022-05-11 09:21:00,227]  -------------------------- PASSED -------------------------- 
+[2022-05-11 09:38:51,421] Pre-condition - 01: Click To 'Log in' Link
+[2022-05-11 09:38:52,085] Pre-condition - 02: Set Cookies and refresh page
+[2022-05-11 09:38:55,717] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:42:09,926] Pre-condition - 01: Click To 'Log in' Link
+[2022-05-11 09:42:10,492] Pre-condition - 02: Set Cookies and refresh page
+[2022-05-11 09:42:14,059] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:45:00,113] Pre-condition - 01: Click To 'Log in' Link
+[2022-05-11 09:45:00,739] Pre-condition - 02: Set Cookies and refresh page
+[2022-05-11 09:45:03,572] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:48:13,816] Pre-condition - 01: Click To 'Log in' Link
+[2022-05-11 09:48:14,583] Pre-condition - 02: Set Cookies and refresh page
+[2022-05-11 09:48:17,561] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:56:07,784] Pre-condition - 01: Click To 'Log in' Link
+[2022-05-11 09:56:08,434] Pre-condition - 02: Set Cookies and refresh page
+[2022-05-11 09:56:11,298] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:56:11,368]  -------------------------- PASSED -------------------------- 
+[2022-05-11 09:56:11,368] Login - 01: Click To 'My Account' Link
+[2022-05-11 09:56:58,613] Pre-condition - 01: Click To 'Log in' Link
+[2022-05-11 09:56:59,290] Pre-condition - 02: Set Cookies and refresh page
+[2022-05-11 09:57:02,147] Login - 01: Verify 'My Account' link is displayed
+[2022-05-11 09:57:02,233]  -------------------------- PASSED -------------------------- 
+[2022-05-11 11:08:10,719] Register - 01: Click To 'Register' Link
+[2022-05-11 11:08:11,570] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-11 11:08:11,704] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-11 11:08:11,793] Register - 04: Enter To Email textbox with value is 'autoclass8304@gmail.com'
+[2022-05-11 11:08:11,926] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-11 11:08:12,023] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-11 11:08:12,124] Register - 07: Click To 'Register' button
+[2022-05-11 11:08:13,776] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-11 11:09:09,838] Register - 01: Click To 'Register' Link
+[2022-05-11 11:09:10,626] Register - 02: Enter To Firstname textbox with value is 'Automation'
+[2022-05-11 11:09:10,749] Register - 03: Enter To Lastname textbox with value is 'FC'
+[2022-05-11 11:09:10,859] Register - 04: Enter To Email textbox with value is 'autoclass4864@gmail.com'
+[2022-05-11 11:09:10,992] Register - 05: Enter To Password textbox with value is '123456'
+[2022-05-11 11:09:11,095] Register - 06: Enter To Confirm Password textbox with value is '123456'
+[2022-05-11 11:09:11,198] Register - 07: Click To 'Register' button
+[2022-05-11 11:09:12,441] Register - 08: Verify Successful Registration Message is displayed
+[2022-05-11 11:09:12,516] Register - 09: Click To 'Log out' Link
+[2022-05-11 11:10:13,376] Register - 01: Click To 'Register' Link
+[2022-05-11 11:10:43,693] OS name = windows 10
+[2022-05-11 11:10:43,694] Driver instance name = firefoxdriver: firefox on windows (e5e6017c-a13a-4045-9383-17a32cdbe66a)
+[2022-05-11 15:48:50,916] My Account - 01: Click To 'My Account' Link
+[2022-05-11 15:49:26,388] Register - 01: Click To 'Register' Link
+[2022-05-11 15:49:27,272] Register - 02: Check To 'Female' Radio Button
+[2022-05-11 15:49:27,565] Register - 03: Enter To Firstname textbox with value is 'Automation'
+[2022-05-11 15:49:27,689] Register - 04: Enter To Lastname textbox with value is 'FC'
+[2022-05-11 15:49:27,781] Register - 05: Select To Date of Birth Day with value is '17'
+[2022-05-11 15:49:28,394] Register - 06: Select To Date of Birth Month with value is 'October'
+[2022-05-11 15:49:28,738] Register - 07: Select To Date of Birth Year with value is '2000'
+[2022-05-11 15:49:29,078] Register - 08: Enter To Email textbox with value is 'autoclass4795@gmail.com'
+[2022-05-11 15:49:29,193] Register - 09: Check To 'Newsletter' Checkbox
+[2022-05-11 15:49:29,231] Register - 10: Enter To Password textbox with value is '123456'
+[2022-05-11 15:49:29,309] Register - 11: Enter To Confirm Password textbox with value is '123456'
+[2022-05-11 15:49:29,384] Register - 12: Click To 'Register' button
+[2022-05-11 15:49:30,281] Register - 13: Verify Successful Registration Message is displayed
+[2022-05-11 15:49:30,428] Login - 01: Click To 'Log out' Link
+[2022-05-11 15:49:31,216] Login - 02: Click To 'Log in' Link
+[2022-05-11 15:49:31,797] Login - 03: Enter To Email textbox with value is 'autoclass4795@gmail.com'
+[2022-05-11 15:49:31,881] Login - 04: Enter To Password textbox with value is '123456'
+[2022-05-11 15:49:31,957] Login - 05: Click To 'Log in' button
+[2022-05-11 15:50:09,833] Register - 01: Click To 'Register' Link
+[2022-05-11 15:50:10,518] Register - 02: Check To 'Female' Radio Button
+[2022-05-11 15:50:10,797] Register - 03: Enter To Firstname textbox with value is 'Automation'
+[2022-05-11 15:50:10,900] Register - 04: Enter To Lastname textbox with value is 'FC'
+[2022-05-11 15:50:10,985] Register - 05: Select To Date of Birth Day with value is '17'
+[2022-05-11 15:50:11,301] Register - 06: Select To Date of Birth Month with value is 'October'
+[2022-05-11 15:50:11,626] Register - 07: Select To Date of Birth Year with value is '2000'
+[2022-05-11 15:50:11,965] Register - 08: Enter To Email textbox with value is 'autoclass9341@gmail.com'
+[2022-05-11 15:50:12,112] Register - 09: Check To 'Newsletter' Checkbox
+[2022-05-11 15:50:12,153] Register - 10: Enter To Password textbox with value is '123456'
+[2022-05-11 15:50:12,230] Register - 11: Enter To Confirm Password textbox with value is '123456'
+[2022-05-11 15:50:12,318] Register - 12: Click To 'Register' button
+[2022-05-11 15:50:13,337] Register - 13: Verify Successful Registration Message is displayed
+[2022-05-11 15:50:13,491] Login - 01: Click To 'Log out' Link
+[2022-05-11 15:50:14,298] Login - 02: Click To 'Log in' Link
+[2022-05-11 15:50:14,875] Login - 03: Enter To Email textbox with value is 'autoclass9341@gmail.com'
+[2022-05-11 15:50:14,963] Login - 04: Enter To Password textbox with value is '123456'
+[2022-05-11 15:50:15,046] Login - 05: Click To 'Log in' button
+[2022-05-11 15:50:15,902] Login - 06: Verify 'My Account' link is displayed
+[2022-05-11 15:50:15,995] My Account - 01: Click To 'My Account' Link
+[2022-05-11 15:50:16,562] My Account - 02: Verify 'My Customer Infor' Page is displayed
+[2022-05-11 15:50:16,652] My Account - 03: Verify 'First Name' value is correct
+[2022-05-11 15:50:16,692] My Account - 04: Verify 'Last Name' value is correct
+[2022-05-11 15:50:16,740] My Account - 05: Verify 'Email' value is correct
+[2022-05-11 15:50:16,791] OS name = windows 10
+[2022-05-11 15:50:16,791] Driver instance name = firefoxdriver: firefox on windows (81789fec-3a80-4ec0-8790-9d2054788232)
+[2022-05-13 16:34:56,463] Register - 01: Click To 'Register' Link
+[2022-05-13 16:34:57,530] Register - 02: Check To 'Female' Radio Button
+[2022-05-13 16:34:57,802] Register - 03: Enter To Firstname textbox with value is 'Automation'
+[2022-05-13 16:34:57,876] Register - 04: Enter To Lastname textbox with value is 'FC'
+[2022-05-13 16:34:57,947] Register - 05: Select To Date of Birth Day with value is '17'
+[2022-05-13 16:34:58,229] Register - 06: Select To Date of Birth Month with value is 'October'
+[2022-05-13 16:34:58,511] Register - 07: Select To Date of Birth Year with value is '2000'
+[2022-05-13 16:34:58,791] Register - 08: Enter To Email textbox with value is 'autoclass3480@gmail.com'
+[2022-05-13 16:34:58,878] Register - 09: Check To 'Newsletter' Checkbox
+[2022-05-13 16:34:58,915] Register - 10: Enter To Password textbox with value is '123456'
+[2022-05-13 16:34:58,971] Register - 11: Enter To Confirm Password textbox with value is '123456'
+[2022-05-13 16:34:59,021] Register - 12: Click To 'Register' button
+[2022-05-13 16:34:59,956] Register - 13: Verify Successful Registration Message is displayed
+[2022-05-13 16:35:00,101] Login - 01: Click To 'Log out' Link
+[2022-05-13 16:35:00,963] Login - 02: Click To 'Log in' Link
+[2022-05-13 16:35:01,572] Login - 03: Enter To Email textbox with value is 'autoclass3480@gmail.com'
+[2022-05-13 16:35:01,643] Login - 04: Enter To Password textbox with value is '123456'
+[2022-05-13 16:35:01,696] Login - 05: Click To 'Log in' button
+[2022-05-13 16:35:02,481] Login - 06: Verify 'My Account' link is displayed
+[2022-05-13 16:35:02,554] My Account - 01: Click To 'My Account' Link
+[2022-05-13 16:35:03,099] My Account - 02: Verify 'My Customer Infor' Page is displayed
+[2022-05-13 16:35:03,155] My Account - 03: Verify 'First Name' value is correct
+[2022-05-13 16:35:03,186] My Account - 04: Verify 'Last Name' value is correct
+[2022-05-13 16:35:03,217] My Account - 05: Verify 'Email' value is correct
+[2022-05-13 16:35:03,250] OS name = windows 10
+[2022-05-13 16:35:03,251] Driver instance name = firefoxdriver: firefox on windows (b3fda586-b637-45ab-aaa5-0b51bebb6fef)

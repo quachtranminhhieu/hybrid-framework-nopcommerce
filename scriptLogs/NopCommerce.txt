@@ -1,0 +1,26 @@
+[2022-05-13 16:34:56,463] Register - 01: Click To 'Register' Link
+[2022-05-13 16:34:57,530] Register - 02: Check To 'Female' Radio Button
+[2022-05-13 16:34:57,802] Register - 03: Enter To Firstname textbox with value is 'Automation'
+[2022-05-13 16:34:57,876] Register - 04: Enter To Lastname textbox with value is 'FC'
+[2022-05-13 16:34:57,947] Register - 05: Select To Date of Birth Day with value is '17'
+[2022-05-13 16:34:58,229] Register - 06: Select To Date of Birth Month with value is 'October'
+[2022-05-13 16:34:58,511] Register - 07: Select To Date of Birth Year with value is '2000'
+[2022-05-13 16:34:58,791] Register - 08: Enter To Email textbox with value is 'autoclass3480@gmail.com'
+[2022-05-13 16:34:58,878] Register - 09: Check To 'Newsletter' Checkbox
+[2022-05-13 16:34:58,915] Register - 10: Enter To Password textbox with value is '123456'
+[2022-05-13 16:34:58,971] Register - 11: Enter To Confirm Password textbox with value is '123456'
+[2022-05-13 16:34:59,021] Register - 12: Click To 'Register' button
+[2022-05-13 16:34:59,956] Register - 13: Verify Successful Registration Message is displayed
+[2022-05-13 16:35:00,101] Login - 01: Click To 'Log out' Link
+[2022-05-13 16:35:00,963] Login - 02: Click To 'Log in' Link
+[2022-05-13 16:35:01,572] Login - 03: Enter To Email textbox with value is 'autoclass3480@gmail.com'
+[2022-05-13 16:35:01,643] Login - 04: Enter To Password textbox with value is '123456'
+[2022-05-13 16:35:01,696] Login - 05: Click To 'Log in' button
+[2022-05-13 16:35:02,481] Login - 06: Verify 'My Account' link is displayed
+[2022-05-13 16:35:02,554] My Account - 01: Click To 'My Account' Link
+[2022-05-13 16:35:03,099] My Account - 02: Verify 'My Customer Infor' Page is displayed
+[2022-05-13 16:35:03,155] My Account - 03: Verify 'First Name' value is correct
+[2022-05-13 16:35:03,186] My Account - 04: Verify 'Last Name' value is correct
+[2022-05-13 16:35:03,217] My Account - 05: Verify 'Email' value is correct
+[2022-05-13 16:35:03,250] OS name = windows 10
+[2022-05-13 16:35:03,251] Driver instance name = firefoxdriver: firefox on windows (b3fda586-b637-45ab-aaa5-0b51bebb6fef)

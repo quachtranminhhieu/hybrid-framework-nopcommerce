@@ -1,0 +1,10 @@
+<suite name="Techpanda">
+
+	<test name="Run on Firefox">
+	<parameter name="browser" value="firefox"></parameter>
+	<classes>
+		<class name="com.techpanda.user.Level_10_DataTable_DataGrid_III" />
+	</classes>
+	</test>
+
+</suite>

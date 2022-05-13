@@ -574,7 +574,7 @@ public class Level_02_BasePage_07_Order extends BasePage {
 	
 	public void handleCannotOrderConsecutively() {
 		if (orderedBefore) {
-			longTimeoutExplicit = 3;
+			longTimeout = 3;
 			while (true) {
 				if (getPageURL(driver).equals("https://demo.nopcommerce.com/onepagecheckout#opc-confirm_order")) {
 					clickToElement(driver, "//button[text()='Confirm']");
@@ -594,7 +594,7 @@ public class Level_02_BasePage_07_Order extends BasePage {
 		} else {
 			clickToElement(driver, "//button[text()='Confirm']");
 		}
-		longTimeoutExplicit = 15;
+		longTimeout = 15;
 		orderedBefore = true;
 	}
 	
