@@ -934,8 +934,8 @@ public class Level_16_Live_Coding_ExtentReportV5 extends BaseTest {
 
 	private WebDriver driver;
 
-	String employeeFirstName, employeeLastName, adminUserName, adminPassword, empUserName, empPassword, statusValue, employeeFullName,
-	employeeID, 
+	String employeeFirstName, employeeLastName, adminUserName, adminPassword, empUserName, empPassword, statusValue, employeeFullName, employeeID,
+	
 			fileName, 
 			
 			editEmpFirstName, editEmpLastName, editEmpFullName, editEmpGender, editEmpMaritalStatus, editEmpNationality, 
