@@ -734,7 +734,6 @@ public class BasePage {
 	}
 	
 	public boolean isSuccessMessageDisplayed(WebDriver driver, String messageValue) {
-		waitForAllElementVisible(driver, HRMBasePageUI.DYNAMIC_SUCCESS_MESSAGE_BY_TEXT, messageValue);
 		return isElementDisplayed(driver, HRMBasePageUI.DYNAMIC_SUCCESS_MESSAGE_BY_TEXT, messageValue);
 	}
 	
