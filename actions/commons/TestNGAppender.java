@@ -8,7 +8,7 @@ import org.testng.Reporter;
  * TestNG requires a call to Reporter.log to insert logging statements into the report
  */
 public class TestNGAppender extends AppenderSkeleton {
-
+	// Chức năng: Thay thế log của Log4J bằng log của TestNG
 	@Override
 	protected void append(LoggingEvent event) {
 		Reporter.log(getLayout().format(event) + "<br>");

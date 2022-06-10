@@ -1,0 +1,64 @@
+[2022-06-07 17:21:05,149] Pre-Condition - Step 01: Open Browser 'firefox' and navigate to 'https://opensource-demo.orangehrmlive.com/'
+[2022-06-07 17:21:12,292] Pre-Condition - Step 02: Login with Admin Role
+[2022-06-07 17:21:15,906] Add New 01 - Step 01: Open 'Employee List' page
+[2022-06-07 17:21:18,752] Add New 01 - Step 02: Click to 'Add' button
+[2022-06-07 17:21:19,592] Add New 01 - Step 03: Enter to 'First Name' textbox with value is: Automation
+[2022-06-07 17:21:19,697] Add New 01 - Step 04: Enter to 'Last Name' textbox with value is: FC
+[2022-06-07 17:21:19,752] Add New 01 - Step 05: Get value of 'Employee ID'
+[2022-06-07 17:21:19,798] Add New 01 - Step 06: Click to 'Create Login Details' checkbox
+[2022-06-07 17:21:20,085] Add New 01 - Step 07: Enter to 'User Name' textbox with value is: automationfc899
+[2022-06-07 17:21:20,183] Add New 01 - Step 08: Enter to 'Password' textbox with value is: 123456789
+[2022-06-07 17:21:20,254] Add New 01 - Step 09: Enter to 'Confirm Password' textbox with value is: 123456789
+[2022-06-07 17:21:20,295] Add New 01 - Step 10: Select 'Enabled' value in 'Status' dropdown
+[2022-06-07 17:21:20,348] Add New 01 - Step 11: Click to 'Save' button
+[2022-06-07 17:21:21,144] Add New 01 - Step 12: Open 'Employee List' page
+[2022-06-07 17:21:29,431] Add New 01 - Step 13: Enter to 'Employee Name' textbox with value is: Automation FC
+[2022-06-07 17:21:29,509] Add New 01 - Step 14: Click to 'Search' button
+[2022-06-07 17:21:35,693] Add New 01 - Step 15: Verify Employee Information displayed at 'Result Table'
+[2022-06-07 17:21:35,773]  -------------------------- FAILED -------------------------- 
+[2022-06-07 17:21:35,839]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:21:35,923]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:21:36,052] Upload Avatar 02 - Step 01: Login with Employee Role
+[2022-06-07 17:21:39,209] Upload Avatar 02 - Step 02: Open Personal Detail Page
+[2022-06-07 17:21:41,244] Upload Avatar 02 - Step 03: Click to Change Photo image
+[2022-06-07 17:21:42,132] Upload Avatar 02 - Step 04: Upload new avatar
+[2022-06-07 17:21:42,160] Upload Avatar 02 - Step 05: Click to Upload button
+[2022-06-07 17:21:44,733] Upload Avatar 02 - Step 06: Verify Success Message is displayed
+[2022-06-07 17:21:44,777]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:21:44,777] Upload Avatar 02 - Step 07: Verify new Avatar is displayed
+[2022-06-07 17:21:44,822]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:21:44,884] Post-Condition: Close Browser 'firefox'
+[2022-06-07 17:21:44,884] OS name = windows 10
+[2022-06-07 17:21:44,884] Driver instance name = firefoxdriver: firefox on windows (a2e2d974-1ffe-4d38-b94d-e5bf3d709238)
+[2022-06-07 17:24:03,302] Pre-Condition - Step 01: Open Browser 'firefox' and navigate to 'https://opensource-demo.orangehrmlive.com/'
+[2022-06-07 17:24:10,690] Pre-Condition - Step 02: Login with Admin Role
+[2022-06-07 17:24:14,276] Add New 01 - Step 01: Open 'Employee List' page
+[2022-06-07 17:24:17,867] Add New 01 - Step 02: Click to 'Add' button
+[2022-06-07 17:24:18,732] Add New 01 - Step 03: Enter to 'First Name' textbox with value is: Automation
+[2022-06-07 17:24:18,827] Add New 01 - Step 04: Enter to 'Last Name' textbox with value is: FC
+[2022-06-07 17:24:18,891] Add New 01 - Step 05: Get value of 'Employee ID'
+[2022-06-07 17:24:18,929] Add New 01 - Step 06: Click to 'Create Login Details' checkbox
+[2022-06-07 17:24:19,202] Add New 01 - Step 07: Enter to 'User Name' textbox with value is: automationfc159
+[2022-06-07 17:24:19,287] Add New 01 - Step 08: Enter to 'Password' textbox with value is: 123456789
+[2022-06-07 17:24:19,353] Add New 01 - Step 09: Enter to 'Confirm Password' textbox with value is: 123456789
+[2022-06-07 17:24:19,398] Add New 01 - Step 10: Select 'Enabled' value in 'Status' dropdown
+[2022-06-07 17:24:19,452] Add New 01 - Step 11: Click to 'Save' button
+[2022-06-07 17:24:20,273] Add New 01 - Step 12: Open 'Employee List' page
+[2022-06-07 17:24:28,478] Add New 01 - Step 13: Enter to 'Employee Name' textbox with value is: Automation FC
+[2022-06-07 17:24:28,558] Add New 01 - Step 14: Click to 'Search' button
+[2022-06-07 17:24:34,742] Add New 01 - Step 15: Verify Employee Information displayed at 'Result Table'
+[2022-06-07 17:24:34,833]  -------------------------- FAILED -------------------------- 
+[2022-06-07 17:24:34,901]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:24:34,986]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:24:35,136] Upload Avatar 02 - Step 01: Login with Employee Role
+[2022-06-07 17:24:38,527] Upload Avatar 02 - Step 02: Open Personal Detail Page
+[2022-06-07 17:24:40,442] Upload Avatar 02 - Step 03: Click to Change Photo image
+[2022-06-07 17:24:41,325] Upload Avatar 02 - Step 04: Upload new avatar
+[2022-06-07 17:24:41,346] Upload Avatar 02 - Step 05: Click to Upload button
+[2022-06-07 17:24:43,935] Upload Avatar 02 - Step 06: Verify Success Message is displayed
+[2022-06-07 17:24:43,976]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:24:43,976] Upload Avatar 02 - Step 07: Verify new Avatar is displayed
+[2022-06-07 17:24:44,019]  -------------------------- PASSED -------------------------- 
+[2022-06-07 17:24:44,095] Post-Condition: Close Browser 'firefox'
+[2022-06-07 17:24:44,095] OS name = windows 10
+[2022-06-07 17:24:44,095] Driver instance name = firefoxdriver: firefox on windows (aba9e6e4-a6f1-496c-8dd5-903b5309b4aa)
