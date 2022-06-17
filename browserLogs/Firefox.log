@@ -1,0 +1,11 @@
+1655436768132	geckodriver	INFO	Listening on 127.0.0.1:19143
+1655436776119	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilejRyQnN"
+1655436776904	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://a531e428-fd8d-4fe3-89b5-f3416e6f0293/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilejRyQnN\\search.json.mozlz4", (void 0)))
+1655436779134	Marionette	INFO	Listening on port 57553
+Read port: 57553
+1655436779329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null

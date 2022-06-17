@@ -18,9 +18,10 @@ import pageObjects.orangeHRM.EmployeeListPO;
 import pageObjects.orangeHRM.LoginPO;
 import pageObjects.orangeHRM.MyInfoPO;
 import reportConfig.ExtentTestManagerV5;
+import utilities.DataUtil;
 import pageObjects.orangeHRM.HRMPageGeneratorManager;
 
-public class Level_16_Live_Coding_ExtentReportV5 extends BaseTest {
+public class Level_19_Fake_Data extends BaseTest {
 
 	@Parameters({"browser", "url"})
 	@BeforeClass
@@ -29,94 +30,96 @@ public class Level_16_Live_Coding_ExtentReportV5 extends BaseTest {
 //		ExtentTestManagerV5.startTest(method.getName(), "Pre-Condition");
 //		ExtentTestManagerV5.getTest().log(Status.INFO, "Pre-Condition - Step 01: Open Browser '" + browserName + "' and navigate to '" + appURL + "'");
 
-		employeeFirstName = "Automation " + getRandomNumber();
-		employeeLastName = "FC";
+		faker = DataUtil.getData();
+		
+		employeeFirstName = faker.getFirstName();
+		employeeLastName = faker.getLastName();
+		employeeFullName = employeeFirstName + " " + employeeLastName;
 		adminUserName = "Admin";
 		adminPassword = "admin123";
-		empUserName = "automationfc" + getRandomNumber();
-		empPassword = "123456789";
+		empUserName = faker.getUserName();
+		empPassword = faker.getPassword();
 		statusValue = "Enabled";
-		employeeFullName = employeeFirstName + " " + employeeLastName;
 		
 		fileName = "cat.jpg";
-		editEmpFirstName = "John " + getRandomNumber();
-		editEmpLastName = "Wick";
+		editEmpFirstName = faker.getFirstName();
+		editEmpLastName = faker.getLastName();
 		editEmpFullName = editEmpFirstName + " " + editEmpLastName;
-		editEmpGender = "Male";
+		editEmpGender = faker.getGender();
 		editEmpMaritalStatus = "Married";
 		editEmpNationality = "Vietnamese";
 		
-		empFirstAddress = "235 Ly Thuong Kiet"; 
-		empSecondAddress = "56 Hoang Dieu"; 
-		empCity = "Ho Chi Minh City"; 
-		empState = "Thu Duc City"; 
-		empZipCode = "550000"; 
+		empFirstAddress = faker.getAddress();
+		empSecondAddress = faker.getAddress();
+		empCity = faker.getCity(); 
+		empState = faker.getState(); 
+		empZipCode = faker.getPostalCode();
 		empCountry = "Viet Nam";
-		empMobile = "0123456789"; 
-		empWorkEmail = "autofc" + getRandomNumber() + "@gmail.com";
+		empMobile = faker.getRandomNumber(100000000,999999999); 
+		empWorkEmail = faker.getEmailAddress();
 		
-		empEmergName = "Johny Dang"; 
+		empEmergName = faker.getFullName(); 
 		empEmergRelp = "Brother"; 
-		empEmergHomePhone = "0987654321"; 
-		empEmergMobile = "0192837465"; 
-		empEmergWorkPhone = "0987612345";
+		empEmergHomePhone = faker.getRandomNumber(100000000,999999999);  
+		empEmergMobile = faker.getRandomNumber(100000000,999999999);  
+		empEmergWorkPhone = faker.getRandomNumber(100000000,999999999); 
 		
-		empDepName = "Wanda Maximoff";
+		empDepName = faker.getFullName();
 		empDepRelp = "Child"; 
-		empDepDOB = "1975-04-30";
+		empDepDOB = faker.getBirthDate();
 		
 		empJobTitle = "Software Architect"; 
 		empJobStatus = "Full-Time Contract"; 
 		empJobCategory = "Professionals"; 
-		empJobJoined = "2022-01-01"; 
-		empJobUnit = "  Quality Assurance"; 
+		empJobJoined = faker.getPastDate();
+		empJobUnit = "  Quality Assurance";
 		empJobLocation = "Texas R&D"; 
-		empJobStartDate = "2022-01-01"; 
-		empJobEndDate = "2030-01-01";
+		empJobStartDate = faker.getPastDate(); 
+		empJobEndDate = faker.getFutureDate();
 		
 		empSalaryGrade = "Grade 2"; 
-		empSalaryComponent = "ABCXYZ"; 
+		empSalaryComponent = "Basic"; 
 		empSalaryFrequency = "Monthly on first pay of month."; 
 		empSalaryCurrency = "United States Dollar"; 
-		empSalaryAmount = "45000";
-		empSalaryAccNumb = "0123456789"; 
+		empSalaryAmount = faker.getRandomNumber(40000,50000); 
+		empSalaryAccNumb = faker.getRandomNumber(100000000,999999999); 
 		empSalaryAccType = "Savings"; 
-		empSalaryRoutNum = "987654321"; 
-		empSalaryAccAmount = "20000000";
+		empSalaryRoutNum = faker.getRandomNumber(100000000,999999999);  
+		empSalaryAccAmount = faker.getRandomNumber(100000000,999999999); 
 		
 		empTaxFedStatus = "Married"; 
-		empTaxFedExemption = "12"; 
+		empTaxFedExemption = faker.getRandomNumber(10,99);  
 		empTaxState = "Ohio"; 
 		empTaxStateStatus = "Non Resident Alien"; 
-		empTaxStateExemption = "34"; 
+		empTaxStateExemption = faker.getRandomNumber(10,99); 
 		empTaxStateUnemp = "Florida"; 
 		empTaxStateWork = "Washington";
 		
 		empQualExpCompany = "Automation Company"; 
 		empQualExpJobTitle = "QC Engineer"; 
-		empQualExpFrom = "2018-01-01"; 
-		empQualExpTo = "2022-12-31"; 
+		empQualExpFrom = faker.getPastDate();
+		empQualExpTo = faker.getFutureDate(); 
 		empQualEduLevel = "Master's Degree"; 
 		empQualEduInst = "Banking Institute"; 
 		empQualEduMajor = "Management Information System"; 
-		empQualEduYear = "4"; 
-		empQualEduGPA = "9.75"; 
-		empQualEduStart = "2014-01-01"; 
-		empQualEduEnd = "2017-12-31";
+		empQualEduYear = faker.getRandomDigit();
+		empQualEduGPA = faker.getRandomDouble(1,1,9); 
+		empQualEduStart = faker.getPastDate();
+		empQualEduEnd = faker.getFutureDate();
 		empQualSkill = "Java"; 
-		empQualSkillYear = "3";
+		empQualSkillYear = faker.getRandomDigit();
 		empQualLang = "Russian"; 
 		empQualLangFluency = "Speaking"; 
 		empQualLangCompetency = "Good";
 		empQualLicType = "Cisco Certified Network Professional (CCNP)"; 
-		empQualLicNumber = "123456789"; 
-		empQualLicIssued = "2021-04-14"; 
-		empQualLicExpiry = "2025-12-31";
+		empQualLicNumber = faker.getRandomNumber(100000000,999999999); 
+		empQualLicIssued = faker.getPastDate(); 
+		empQualLicExpiry = faker.getFutureDate();
 		
 		empRepSuperMethod = "Other";
 		empRepSuborMethod = "Other";
-		empRepSuperSpecify = "Email " + getRandomNumber();
-		empRepSuborSpecify = "Skype " + getRandomNumber();
+		empRepSuperSpecify = "Email " + faker.getRandomNumber(1,999);
+		empRepSuborSpecify = "Skype " + faker.getRandomNumber(1,999);
 		
 		loginPage = HRMPageGeneratorManager.getLoginPage(driver);
 		
@@ -928,11 +931,6 @@ public class Level_16_Live_Coding_ExtentReportV5 extends BaseTest {
 		closeBrowserAndDriver();
 	}
 
-	public int getRandomNumber() {
-		Random rand = new Random();
-		return rand.nextInt(999);
-	}
-
 	private WebDriver driver;
 
 	String employeeFirstName, employeeLastName, adminUserName, adminPassword, empUserName, empPassword, statusValue, employeeFullName, employeeID,
@@ -967,5 +965,6 @@ public class Level_16_Live_Coding_ExtentReportV5 extends BaseTest {
 	EmployeeListPO employeeListPage;
 	LoginPO loginPage;
 	MyInfoPO myInfoPage;
+	DataUtil faker;
 
 }

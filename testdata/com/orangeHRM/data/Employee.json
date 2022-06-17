@@ -1,0 +1,17 @@
+{
+	"firstname" : "John",
+	"lastname" : "Wick",
+	"fullname" : "John Wick",
+	"username" : "automation1234",
+	"password" : "123123123",
+	"email" : "automationfc1234@gmail.com",
+	"status" : "Enabled",
+	"ContactDetails":{
+		"editfirstname" : "Peter",
+		"editlastname" : "Parker"
+	},
+	"Role" : {
+		"adminusername" : "Admin",
+		"adminpassword" : "admin123"
+	}
+}

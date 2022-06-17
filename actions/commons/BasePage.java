@@ -686,7 +686,6 @@ public class BasePage {
 	
 	public void clickToButtonByID(WebDriver driver, String buttonID) {
 		clickToElement(driver, HRMBasePageUI.DYNAMIC_BUTTON_BY_ID, buttonID);
-		areJQueryAndJSLoadedSuccess(driver);
 	}
 
 	public void clickToRadioButtonByLabel(WebDriver driver, String radioLabel) {

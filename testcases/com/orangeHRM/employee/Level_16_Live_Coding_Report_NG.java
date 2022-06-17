@@ -169,6 +169,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		log.info("Add New 01 - Step 13: Click to 'Save' button");
 		addEmployeePage.clickToButtonByID(driver, "btnSave");
 		myInfoPage = HRMPageGeneratorManager.getMyInfoPage(driver);
+		myInfoPage.areJQueryAndJSLoadedSuccess(driver);
 
 		log.info("Add New 01 - Step 14: Open 'Employee List' page");
 		myInfoPage.openSubMenuPage(driver, "PIM", "Employee List");
@@ -267,7 +268,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		myInfoPage.clickToButtonByID(driver, "btnSave");
 
 		log.info("Personal Details 03 - Step 15: Verify Success Message is displayed");
-//		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 
 		log.info("Personal Details 03 - Step 16: Verify 'First Name' textbox is updated successfully");
 		verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmpFirstName"), editEmpFirstName);
@@ -338,7 +339,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		myInfoPage.clickToButtonByID(driver, "btnSave");
 
 		log.info("Contact Details 04 - Step 13: Verify Success Message is displayed");
-//		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 
 		log.info("Contact Details 04 - Step 14: Verify 'Address Street 1' texbox is updated successfully");
 		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_street1"), empFirstAddress);
@@ -392,7 +393,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		myInfoPage.clickToButtonByID(driver, "btnSaveEContact");
 		
 		log.info("Emergency Contacts 05 - Step 09: Verify Success Message is displayed");
-//		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Emergency Contacts 05 - Step 10: Verify 'Name' value is updated successfully in data table");
 		verifyEquals(myInfoPage.getValueInDataTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Name", "1"), empEmergName);
@@ -431,7 +432,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		myInfoPage.clickToButtonByID(driver, "btnSaveDependent");
 		
 		log.info("Dependents 06 - Step 07: Verify Success Message is displayed");
-//		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Dependents 06 - Step 08: Verify 'Name' value is updated successfully in data table");
 		verifyEquals(myInfoPage.getValueInDataTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Name", "1"), empDepName);
@@ -497,7 +498,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		log.info("Job 07 - Step 13: Select item in 'Job Category' dropdown with value is: '" + empJobCategory + "'");
 		employeeListPage.selectItemInDropdownByID(driver, empJobCategory, "job_eeo_category");
 		
-		log.info("Job 07 - Step 14: Select item in 'Sub Unit' dropdown with value is: '" + empJobUnit + "'");
+		log.info("Job 07 - Step 14: Select item in 'Sub Unit' dropdown with value is: '" + empJobUnit.trim() + "'");
 		employeeListPage.selectItemInDropdownByID(driver, empJobUnit, "job_sub_unit");
 		
 		log.info("Job 07 - Step 15: Select item in 'Location' dropdown with value is: '" + empJobLocation + "'");
@@ -516,7 +517,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnSave");
 		
 		log.info("Job 07 - Step 21: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Updated"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Updated"));
 		
 		log.info("Job 07 - Step 22: Verify 'Job Title' dropdown is updated successfully");
 		verifyEquals(employeeListPage.getSelectedItemInDropdownByID(driver, "job_job_title"), empJobTitle);
@@ -585,7 +586,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnSalarySave");
 		
 		log.info("Salary 08 - Step 14: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Salary 08 - Step 15: Verify 'Salary Component' value is updated successfully in data table");
 		verifyEquals(employeeListPage.getValueInDataTableIDAtColumnNameAndRowIndex(driver, "tblSalary", "Salary Component", "1"), empSalaryComponent);
@@ -649,7 +650,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnSave");
 		
 		log.info("Tax 09 - Step 12: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Tax 09 - Step 13: Verify 'Federal Income Tax - Status' value is updated successfully");
 		verifyEquals(employeeListPage.getSelectedItemInDropdownByID(driver, "tax_federalStatus"), empTaxFedStatus);
@@ -696,7 +697,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnWorkExpSave");
 		
 		log.info("Qualifications 10 - Step 08: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Qualifications 10 - Step 09: Verify 'Company' value is updated successfully in 'Work Expericence' data table");
 		verifyEquals(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("Work Experience", "Company", "1"), empQualExpCompany);
@@ -738,7 +739,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnEducationSave");
 		
 		log.info("Qualifications 10 - Step 22: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Qualifications 10 - Step 23: Verify 'Level' value is updated successfully in 'Education' data table");
 		verifyEquals(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("Education", "Level", "1"), empQualEduLevel);
@@ -762,7 +763,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnSkillSave");
 		
 		log.info("Qualifications 10 - Step 30: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Qualifications 10 - Step 31: Verify 'Skill' value is updated successfully in 'Skills' data table");
 		verifyEquals(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("Skills", "Skill", "1"), empQualSkill);
@@ -786,7 +787,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnLanguageSave");
 		
 		log.info("Qualifications 10 - Step 38: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Qualifications 10 - Step 39: Verify 'Language' value is updated successfully in 'Languages' data table");
 		verifyEquals(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("Languages", "Language", "1"), empQualLang);
@@ -816,7 +817,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnLicenseSave");
 		
 		log.info("Qualifications 10 - Step 48: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Qualifications 10 - Step 49: Verify 'License Type' value is updated successfully in 'License' data table");
 		verifyEquals(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("License", "License Type", "1"), empQualLicType);
@@ -849,7 +850,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnSaveReportTo");
 		
 		log.info("Report-to 11 - Step 07: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Report-to 11 - Step 08: Verify 'Name' value is updated successfully in 'Supervisors' data table");
 		verifyTrue(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("Assigned Supervisors", "Name", "1").contains(empRepSuperLastName));
@@ -873,7 +874,7 @@ public class Level_16_Live_Coding_Report_NG extends BaseTest {
 		employeeListPage.clickToButtonByID(driver, "btnSaveReportTo");
 		
 		log.info("Report-to 11 - Step 15: Verify Success Message is displayed");
-//		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
+		verifyTrue(employeeListPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Report-to 11 - Step 16: Verify 'Name' value is updated successfully in 'Subordinates' data table");
 		verifyTrue(employeeListPage.getValueInDataTableNameAtColumnNameAndRowIndex("Assigned Subordinates", "Name", "1").contains(empRepSuborLastName));

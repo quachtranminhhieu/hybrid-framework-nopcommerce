@@ -2,6 +2,11 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -12,6 +17,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -78,6 +88,9 @@ public class BaseTest {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			break;
+		case SAFARI:
+			driver = new SafariDriver();
+			break;
 		default:
 			throw new RuntimeException("Browser name invalid.");
 		}
@@ -93,7 +106,23 @@ public class BaseTest {
 		switch (browser) {
 		case FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			
+			// Add extensions to Firefox
+			FirefoxProfile profile = new FirefoxProfile();
+			File firefoxExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions" + File.separator + "adblock_plus-3.14.xpi");
+			profile.addExtension(firefoxExtension);
+			FirefoxOptions f_options = new FirefoxOptions();
+			f_options.setProfile(profile);
+			
+			// Run in InCognito => No Extensions added
+			// f_options.addArguments("-private");
+			
+			// Disable browser log in Console
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstans.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
+			
+			
+			driver = new FirefoxDriver(f_options);
 			break;
 		case H_FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
@@ -104,7 +133,39 @@ public class BaseTest {
 			break;
 		case CHROME:
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			
+			// Add extension to Chrome
+			File chromeExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions" + File.separator + "adblock_plus_3_14_0_0.crx");
+			ChromeOptions c_options = new ChromeOptions();
+			c_options.addExtensions(chromeExtension);
+			
+			// Run in InCognito => No Extensions added
+			// c_options.addArguments("--incognito");
+			
+			// Disable infobar in chrome
+			// Old: 
+			// c_options.addArguments("--disable-infobars");
+			// New:
+			c_options.setExperimentalOption("useAutomationExtension", "false");
+			c_options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+			
+			// Disable notifications popup
+			c_options.addArguments("--disable-notifications");
+			
+			// Disable location popup
+			c_options.addArguments("--disable-geolocation");
+			
+			// Disable browser log in Console
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+			
+			// Disable Save Password popup
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			c_options.setExperimentalOption("prefs", prefs);
+			
+			driver = new ChromeDriver(c_options);
 			break;
 		case COCCOC:
 			WebDriverManager.chromedriver().driverVersion("98.0.4758.48").setup();
@@ -115,6 +176,9 @@ public class BaseTest {
 		case EDGE:
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			break;
+		case SAFARI:
+			driver = new SafariDriver();
 			break;
 		default:
 			throw new RuntimeException("Browser name invalid.");
@@ -168,6 +232,16 @@ public class BaseTest {
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}
 		return pass;
+	}
+	
+	protected void showBrowserConsoleLogs(WebDriver driver) {
+		if (driver.toString().contains("chrome")) {
+			LogEntries logs = driver.manage().logs().get("browser");
+			List<LogEntry> logList = logs.getAll();
+			for (LogEntry logging : logList) {
+				log.info("----------" + logging.getLevel().toString() + "----------\n" + logging.getMessage());
+			}
+		}
 	}
 	
 	protected void closeBrowserAndDriver() {
