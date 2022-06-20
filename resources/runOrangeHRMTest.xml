@@ -17,7 +17,7 @@
 	<test name="Run on Firefox">
 	<parameter name="browser" value="firefox"></parameter>
 	<classes>
-		<class name="com.orangeHRM.employee.Level_20_Data_Test_I_Into_Class" />
+		<class name="com.orangeHRM.employee.Level_19_Fake_Data" />
 	</classes>
 	</test>
 
