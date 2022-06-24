@@ -15,6 +15,7 @@
 	<parameter name="url" value = "https://opensource-demo.orangehrmlive.com/" />
 	
 	<test name="Run on Firefox">
+<!-- 	<parameter name="environment" value="testing"></parameter> -->
 	<parameter name="browser" value="firefox"></parameter>
 	<classes>
 		<class name="com.orangeHRM.employee.Level_19_Fake_Data" />

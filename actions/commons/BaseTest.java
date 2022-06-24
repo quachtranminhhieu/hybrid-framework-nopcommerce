@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -20,7 +19,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -31,6 +29,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 	protected final Log log;
+	
+	private enum ENVIRONMENT {
+		DEV, TESTING, STAGING, PRODUCTION;
+	}
 	
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
@@ -187,6 +189,11 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appURL);
+		
+		// Áp dụng cho Level_21_Multiple_Environment
+		// Thêm <parameter> trong file xml:
+		// <parameter name = "environment" value = "dev" />
+		// driver.get(getEnvironmentValue(appURL));
 		return driver;
 	}
 
@@ -304,5 +311,21 @@ public class BaseTest {
 			}
 		}
 	}
-
+	
+	// Áp dụng ở phía trên
+	private String getEnvironmentValue(String enviromentValue) {
+		ENVIRONMENT enviroment = ENVIRONMENT.valueOf(enviromentValue.toUpperCase());
+		switch (enviroment) {
+		case DEV:
+			return "https://demo.guru99.com/v1";
+		case TESTING:
+			return "https://demo.guru99.com/v2";
+		case STAGING:
+			return "https://demo.guru99.com/v3";
+		case PRODUCTION:
+			return "https://demo.guru99.com/v4";
+		default:
+			return "https://demo.guru99.com/v1";
+		}
+	}
 }
