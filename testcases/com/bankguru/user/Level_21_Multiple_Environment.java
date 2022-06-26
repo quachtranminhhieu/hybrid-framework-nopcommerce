@@ -16,7 +16,7 @@ public class Level_21_Multiple_Environment extends BaseTest {
 	@Parameters({"browser", "environment"})
 	@BeforeClass
 	public void beforeClass(String browserName, String environmentName) {
-		// Dynamic: Lấy giá trị environmentName thế vào biến ${env} ở File Environment.class (ở package environmentConfig)
+		// Dynamic: Lấy giá trị environmentName từ file xml thế vào biến ${env} ở File Environment.class (ở package environmentConfig)
 		ConfigFactory.setProperty("env", environmentName);
 		
 		environment = ConfigFactory.create(Environment.class);

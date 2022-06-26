@@ -1,168 +1,15 @@
-1655731063290	geckodriver	INFO	Listening on 127.0.0.1:12393
-1655731071067	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilePie0ck"
-1655731072434	Marionette	INFO	Marionette enabled
-JavaScript warning: moz-extension://f7d5c8d1-0478-4b23-90ab-236fd08a2af0/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilePie0ck\\search.json.mozlz4", (void 0)))
-1655731075034	Marionette	INFO	Listening on port 56556
-Read port: 56556
-1655731075194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling JbavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-ack to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.oraJavaScript errorn:g erhersourcmel:i/v/eg.rceo/mm"od
-ules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: fallJavaScripitn errgo rb:a crk toe sao usrycnec:h/r/ognroeu/sm omdeusles/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-sage for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-JavaScript erdreomro:. orrangehrmlive.com"
-esource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchrJavaScronouisp tm eesrsraogre:  froers:o"u "https://opensource-demo.orangehrmlive.com"
-rce://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: fJavaScripatl error: resource://gre/mloidnugl ebsa/cLko gtion Maa nsaygnecrhPraorneonuts. jmsems,s algien ef o1r3:6":  "ThytptepEsr://opensource-demo.orangehrmlive.com"
-ror: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:"JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError:  "gReciphetMtapnsa:g/e/ro piesn snouulrlce
--demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "hJtavatScript error: resource://gre/modules/LoginManagerParent.jsm, line 136:ps://opensourc eT-ydpemo.oerangEerhrror: mglRieve.comcipeM"
-anager is null
-console.warn: LoginRecipes: "getRecipes: falling back toJ aa svyanScchrriopnto ues mesrsagre foor:r":  "resourchtteps::////gre/opensource-demmoo.dourlesangeh/rmlive.cLoom"
-ginManagerParent.jsm, line 136: TypeErrconsole.warn: LoginRecipes: "geotRercipes: fal:l ing back to a synchrognRouse cmessage for:i"p eMana"https://opengsourceer-demo.o ranigeshrm lniuve.coml"l
+1656056888847	geckodriver	INFO	Listening on 127.0.0.1:39765
+1656056897552	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilerDYZUX"
+1656056898345	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://2d03e88e-53f6-4053-8cbf-9b89cf8afb26/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilerDYZUX\\search.json.mozlz4", (void 0)))
+1656056900593	Marionette	INFO	Listening on port 55279
+Read port: 55279
+1656056900721	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656056909897	Marionette	INFO	Stopped listening on port 55279
 
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://JavaScript oeprernosro:u rrcees-oduermcoe.:o/r/agrngehrmlive.com"
-e/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https:/JavaScrip/to peernrsooru:r cree-sdoeumroc.eo:r/a/ngre/modules/LgoeghirnmManaglerPiavree.ncto.mj"sm
-, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opeJnasvoauSrccrei-pdte meor.roorra:n greehsromulricvee:./c/om"gre/m
-odules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message foJavra:" Script error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-"https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronouJs amveasSscargiep tf oerr:r"o r":h trtepsso:u/r/coep://gree/nmsooduurlces/eL-odgeimnoM.orangehrmlive.com"
-anagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https:JavaScrip/t/ oeprernosro:u rrcees-oduermcoe.:o/r/agnrgee/hmromdluilvees./cLoomginMan"ag
-erParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message forJ:a"vaScript error:  "rhetstopusr:c/e/:o/p/egnrseo/umrocdeu-ldeesm/oL.oogrianngehrmlive.com"
-ManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to aJava Ssynchronous messagcer ifpotr :e"r r"ohrt:t prse:s/o/urcopenes:o/u/rgcree-/dmeomdou.loerangehrmlive.com"
-s/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchJavaScriptr oenroruosr :m ersessaoguer cfeo:r/:/"g r"eh/tmtopdsu:le/s//oLpoegnisnoMuarncaeg-edrePmaor.eonrta.njgehsm, line 136: TypeError: gRecipeManager is null
-rmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchrJoavaScnroiupst  meersrsoarg:e  rfeosro:u"r c"eh:t/t/pgsr:e///moopdeunlseosu/rcLeo-gdienmMoa.noargaenrgPehrmliavre.com"e
-nt.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a syJavaScript erronchronous message for:" "https://opensource-rd:emo. orangehrmlive.com"
-resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a syncJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-hronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://oJavaScriptp eerrnor:s rourceeso-udrecmeo.ora://ngreg/moduelhersm/lLiovgei.ncMoamn"a
-gerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronousJavaScript erro rm:e srseasgoeu rfcoer::/"/ g"rhet/tmpso:d/u/opleenss/oLuorgcien-Mdaenmaog.eorrPaanrgeenhtr.mjlsimv,e .lcionme" 1
-36: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensoJuravaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-ce-demo.orangehrmlive.com"
-console.warn: LoginReJavaScript error:c irpeesource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManags: e"rg eitsR encuilples
-: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous JmavaScript error: resoeusrscaeg:e/ /fgorre:/"m o"dhutltepss/:L/o/goipneMnasnoaugrecreP-adreemnot..ojrsamn,g elhirnmel i1ve.c3o6m:"
- TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangJavaScriephtr mlive.coemr"
-ror: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensourceJavaSc-demo.orangehrrimlipt error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-ve.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a JavsaySnccrhirpotn oeursr omre:s sraegseo ufroce:/r/:g"r e"/hmtotdpusl:e/s//oLpoegnisnoMuarncagee-rdPeamrento..josrma,n lgienher m1l3iv6e:. cToymp"eE
-rror: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is nullc
-onsole.warn: LoginRecipes: "getRecipes: falling back to a JavaSscyrnipt errorc:h rroensoouusr cmee:s/s/aggree /fmoor:"d u"lhetst/pLso:g/i/noMpaennsource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "hatgteprsP:a/r/eopensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-nt.jsm, line 136: TypeError: gRecipeManager is null
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opJeanvsaoSucrrciep-td eemror.oorr:a nrgeeshorumrlciev:e/./cgorme/modul"es/LoginM
-acnoangseorlPe.warn: LoginRecipes: "agreetnRte.cjispme,s :l ifnael l1i3n6g:  bTaycpeErrokr :t og Rae csiypnechroManangoeurs  imse snsualgle 
-for:" "https://opensoJuarvce-demo.orangehrmlive.com"
-aScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManacgoenrs oilse .nwuarn: LoginRecipes: "getRecipes: falling back to a synlclhr
-oJnaovuasS cmreispt errorsage for:" "https://opensource-demo.orangehrmlive.com"
-: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a syJavaScriptn cehrrroor: resnoous umressagcee for::/"/ g"rhettps/:m/o/doupleens/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-source-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: fallJavaScript error: resouinrce:/g back/gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
- to a synchroJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-nous message for:" "https://opensource-demo.orangehrmlJavaScript error: ive.resoucom"
-rce://gre/modulconsole.waren: LoginRecipes: "gsetR/LoginManageecipes: fallinrg bParackent.jsm, li net o 136: TypeErroar : gRescyipeManncager hirs nonous mesusll
-age fJoarvaScript erro:r: resou"rce://gre/modu "https:/les/Log/opeinManagensourrParce-deent.jmo.orangsehrm, limlive.comne 13"
-co6: TypeError: gRecipeMnsoleanager is null
-.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mesJsavaageS focr:"r "hitpttps: //oepenrsource-demo.orranogehrr:m lriesouvrec.ec://gre/modules/LoginMoamnagerParent.jsm, line 136: "TypeE
-rror: gRecipconesolMe.warn: LogiannagerR isecipe nusll: "ge
-tJaRecipveasS: fcarliling back top a synchrotnou s meessrarge foor:r resource://gre/modules/LoginManagerParent.jsm, line: 136: TypeError: gRe" "cipeMhttanagerps://opensource-demo.orangehrmlive.com"
- is null
-cJavoaScnsole.warnrip: Lt errogior: resonuRrce://gecipes: "re/modules/LoginManagerParent.jsm,ge line 136: TypeErrotRer: cipgeRecipeManager is null
-JavaScript error: rsesource://gre/:m ofdulesa/LlloginManageriPnaregn tback.jsm, line 1 3t6o: TypeError a s: gReynchcipeMronous anager is message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: null"g
-etJRaevcaiSpcersi:p tfall ienrg back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-ror: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"JavaScript error: resource://gre/m
-odules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messaJgaev afScript erorro:" r":h trtps:/e/sopensoouurcrec-demo.oerangehrmlive.com"://
-gre/modulconses/Looglie.warnnM: LaonginaRgeciepres: "PgaetRreecnipes:t .jsm,f line 136: TypeaElrlringo rback :t og Rae csiypnecMharnoangoeur is null
-sJ maevsasSacgrei pfort: "e "httpsr://opensource-demo.orangehrmlive.com"
-ror: resourcec:o/nsole./wgarren/:m oLdouglies/LnoRgeicniMpaensa:gerParent.jsm, line 136: TypeError: gRecipeManager is null
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-JavaScript error: re source:"//gre/mgoedules/LotginManagerParent.jsm, line 136: TypeError: gRecipeManageRre ciisp ensu:l lfa
-lling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmJavaScript lerroirv:e reso.ucrocme":/
-/gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demoJ.oraavaScrinpgte herrmrloirv:e .resource:com"//gre
-/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmJalvaScripitv e.ceorromr": res
-ource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message foJavaScript errro:r":  re"shource:/t/tgre/moduplses/:L/oginM/aonagerpPearentn.sjsm, oluine 1r3c6: eT-ypeErrodre:mo. ogRecipeManager is null
-rangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a sJynachronouvaScript error: resource://gre/modules/LoginManagerParesn t.jmessage for:" "https://opensource-demo.orangehrmlive.com"
-sm, line 136: TypeError: gRecipeManager is null
-1655731231539	Marionette	INFO	Stopped listening on port 56556
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
