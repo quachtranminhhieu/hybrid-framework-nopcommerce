@@ -45,17 +45,17 @@ public class DataUtil {
 	}
 	
 	public String getBirthDate() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-dd-MM");
 		return dateFormat.format(faker.date().birthday());
 	}
 	
 	public String getPastDate() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-dd-MM");
 		return dateFormat.format(faker.date().past(365, TimeUnit.DAYS));
 	}
 	
 	public String getFutureDate() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-dd-MM");
 		return dateFormat.format(faker.date().future(365, TimeUnit.DAYS));
 	}
 	

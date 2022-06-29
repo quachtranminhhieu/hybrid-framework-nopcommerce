@@ -2,6 +2,8 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -10,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +22,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -29,15 +34,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 	protected final Log log;
-	
+
 	private enum ENVIRONMENT {
 		DEV, TESTING, STAGING, PRODUCTION;
 	}
-	
+
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
-	
+
 	@BeforeSuite
 	public void initBeforeSuite() {
 		deleteAllureReport();
@@ -61,7 +66,7 @@ public class BaseTest {
 	public WebDriver getDriverInstance() {
 		return this.driver;
 	}
-	
+
 	protected WebDriver getBrowserDriver(String browserName) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
@@ -96,34 +101,35 @@ public class BaseTest {
 		default:
 			throw new RuntimeException("Browser name invalid.");
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(GlobalConstans.USER_PAGE_URL);
 		return driver;
 	}
-	
+
 	protected WebDriver getBrowserDriver(String browserName, String appURL) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
 		case FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
-			
+
 			// Add extensions to Firefox
 			FirefoxProfile profile = new FirefoxProfile();
-			File firefoxExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions" + File.separator + "adblock_plus-3.14.xpi");
+			File firefoxExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+					+ File.separator + "adblock_plus-3.14.xpi");
 			profile.addExtension(firefoxExtension);
 			FirefoxOptions f_options = new FirefoxOptions();
 			f_options.setProfile(profile);
-			
+
 			// Run in InCognito => No Extensions added
 			// f_options.addArguments("-private");
-			
+
 			// Disable browser log in Console
 			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstans.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
-			
-			
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
+					GlobalConstans.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
+
 			driver = new FirefoxDriver(f_options);
 			break;
 		case H_FIREFOX:
@@ -135,38 +141,39 @@ public class BaseTest {
 			break;
 		case CHROME:
 			WebDriverManager.chromedriver().setup();
-			
+
 			// Add extension to Chrome
-			File chromeExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions" + File.separator + "adblock_plus_3_14_0_0.crx");
+			File chromeExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+					+ File.separator + "adblock_plus_3_14_0_0.crx");
 			ChromeOptions c_options = new ChromeOptions();
 			c_options.addExtensions(chromeExtension);
-			
+
 			// Run in InCognito => No Extensions added
 			// c_options.addArguments("--incognito");
-			
+
 			// Disable infobar in chrome
-			// Old: 
+			// Old:
 			// c_options.addArguments("--disable-infobars");
 			// New:
 			c_options.setExperimentalOption("useAutomationExtension", "false");
 			c_options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			
+
 			// Disable notifications popup
 			c_options.addArguments("--disable-notifications");
-			
+
 			// Disable location popup
 			c_options.addArguments("--disable-geolocation");
-			
+
 			// Disable browser log in Console
 			System.setProperty("webdriver.chrome.args", "--disable-logging");
 			System.setProperty("webdriver.chrome.silentOutput", "true");
-			
+
 			// Disable Save Password popup
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
 			c_options.setExperimentalOption("prefs", prefs);
-			
+
 			driver = new ChromeDriver(c_options);
 			break;
 		case COCCOC:
@@ -185,15 +192,151 @@ public class BaseTest {
 		default:
 			throw new RuntimeException("Browser name invalid.");
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appURL);
-		
+
 		// Áp dụng cho Level_21_Multiple_Environment
 		// Thêm <parameter> trong file xml:
 		// <parameter name = "environment" value = "dev" />
 		// driver.get(getEnvironmentValue(appURL));
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriver(String browserName, String appURL, String ipAddress, String portNumber) {
+		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+
+		// New: Áp dụng ở Level_23_Selenium_Grid
+		DesiredCapabilities capability = null;
+
+		switch (browser) {
+		case FIREFOX:
+			WebDriverManager.firefoxdriver().setup();
+
+			// New
+			capability = DesiredCapabilities.firefox();
+			capability.setBrowserName("firefox");
+			capability.setPlatform(Platform.WINDOWS);
+
+			FirefoxProfile profile = new FirefoxProfile();
+			File firefoxExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+					+ File.separator + "adblock_plus-3.14.xpi");
+			profile.addExtension(firefoxExtension);
+			FirefoxOptions f_options = new FirefoxOptions();
+			f_options.setProfile(profile);
+
+			// New
+			f_options.merge(capability);
+
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
+					GlobalConstans.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
+
+			// Must delete new driver
+			// driver = new FirefoxDriver(f_options);
+			break;
+		case H_FIREFOX:
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions h_f_options = new FirefoxOptions();
+			h_f_options.addArguments("--headless");
+			h_f_options.addArguments("window-size=1920x1080");
+
+			// New
+			capability = DesiredCapabilities.firefox();
+			capability.setBrowserName("firefox");
+			capability.setPlatform(Platform.WINDOWS);
+			// New
+			h_f_options.merge(capability);
+
+			break;
+		case CHROME:
+			WebDriverManager.chromedriver().setup();
+
+			// New
+			capability = DesiredCapabilities.chrome();
+			capability.setBrowserName("chrome");
+			capability.setPlatform(Platform.WINDOWS);
+
+			File chromeExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+					+ File.separator + "adblock_plus_3_14_0_0.crx");
+			ChromeOptions c_options = new ChromeOptions();
+			c_options.addExtensions(chromeExtension);
+			c_options.setExperimentalOption("useAutomationExtension", "false");
+			c_options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+
+			c_options.addArguments("--disable-notifications");
+
+			c_options.addArguments("--disable-geolocation");
+
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			c_options.setExperimentalOption("prefs", prefs);
+
+			// New
+			c_options.merge(capability);
+
+			break;
+		case COCCOC:
+			WebDriverManager.chromedriver().driverVersion("98.0.4758.48").setup();
+
+			// New
+			capability = DesiredCapabilities.chrome();
+			capability.setBrowserName("chrome");
+			capability.setPlatform(Platform.WINDOWS);
+
+			ChromeOptions cc_options = new ChromeOptions();
+			cc_options.setBinary("C:\\Users\\Dell\\AppData\\Local\\CocCoc\\Browser\\Application\\browser.exe");
+
+			// New
+			cc_options.merge(capability);
+
+			break;
+		case EDGE:
+			WebDriverManager.edgedriver().setup();
+
+			// New
+			capability = DesiredCapabilities.edge();
+			capability.setBrowserName("edge");
+			capability.setPlatform(Platform.ANY);
+			capability.setJavascriptEnabled(true);
+
+			break;
+		case SAFARI:
+			// New
+			capability = DesiredCapabilities.safari();
+			capability.setBrowserName("safari");
+			capability.setPlatform(Platform.MAC);
+			capability.setJavascriptEnabled(true);
+			
+			break;
+		case IE:
+			WebDriverManager.iedriver().arch32().setup();
+			// New
+			capability = DesiredCapabilities.internetExplorer();
+			capability.setBrowserName("internetexplorer");
+			capability.setPlatform(Platform.WINDOWS);
+			capability.setJavascriptEnabled(true);
+
+			break;
+		default:
+			throw new RuntimeException("Browser name invalid.");
+		}
+		
+		// New: New driver here
+		try {
+			driver = new RemoteWebDriver(new URL(String.format("http://%s:%s/wd/hub", ipAddress, portNumber)), capability);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appURL);
 		return driver;
 	}
 
@@ -240,7 +383,7 @@ public class BaseTest {
 		}
 		return pass;
 	}
-	
+
 	protected void showBrowserConsoleLogs(WebDriver driver) {
 		if (driver.toString().contains("chrome")) {
 			LogEntries logs = driver.manage().logs().get("browser");
@@ -250,7 +393,7 @@ public class BaseTest {
 			}
 		}
 	}
-	
+
 	protected void closeBrowserAndDriver() {
 		String cmd = "";
 		try {
@@ -311,7 +454,7 @@ public class BaseTest {
 			}
 		}
 	}
-	
+
 	// Áp dụng ở phía trên
 	private String getEnvironmentValue(String enviromentValue) {
 		ENVIRONMENT enviroment = ENVIRONMENT.valueOf(enviromentValue.toUpperCase());
