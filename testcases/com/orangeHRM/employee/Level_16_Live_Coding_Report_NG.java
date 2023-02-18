@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalConstans;
+import commons.GlobalConstants;
 import pageObjects.orangeHRM.AddEmployeePO;
 import pageObjects.orangeHRM.DashboardPO;
 import pageObjects.orangeHRM.EmployeeListPO;

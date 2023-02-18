@@ -50,7 +50,7 @@ public class BaseTest {
 
 	public void deleteAllureReport() {
 		try {
-			String pathFolderDownload = GlobalConstans.PROJECT_PATH + "/allure-results";
+			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-results";
 			File file = new File(pathFolderDownload);
 			File[] listOfFiles = file.listFiles();
 			for (int i = 0; i < listOfFiles.length; i++) {
@@ -103,8 +103,8 @@ public class BaseTest {
 		}
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(GlobalConstans.USER_PAGE_URL);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(GlobalConstants.USER_PAGE_URL);
 		return driver;
 	}
 
@@ -116,7 +116,7 @@ public class BaseTest {
 
 			// Add extensions to Firefox
 			FirefoxProfile profile = new FirefoxProfile();
-			File firefoxExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+			File firefoxExtension = new File(GlobalConstants.PROJECT_PATH + File.separator + "browserExtensions"
 					+ File.separator + "adblock_plus-3.14.xpi");
 			profile.addExtension(firefoxExtension);
 			FirefoxOptions f_options = new FirefoxOptions();
@@ -128,7 +128,7 @@ public class BaseTest {
 			// Disable browser log in Console
 			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
 			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
-					GlobalConstans.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
+					GlobalConstants.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
 
 			driver = new FirefoxDriver(f_options);
 			break;
@@ -143,7 +143,7 @@ public class BaseTest {
 			WebDriverManager.chromedriver().setup();
 
 			// Add extension to Chrome
-			File chromeExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+			File chromeExtension = new File(GlobalConstants.PROJECT_PATH + File.separator + "browserExtensions"
 					+ File.separator + "adblock_plus_3_14_0_0.crx");
 			ChromeOptions c_options = new ChromeOptions();
 			c_options.addExtensions(chromeExtension);
@@ -194,7 +194,7 @@ public class BaseTest {
 		}
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appURL);
 
 		// Áp dụng cho Level_21_Multiple_Environment
@@ -220,7 +220,7 @@ public class BaseTest {
 			capability.setPlatform(Platform.WINDOWS);
 
 			FirefoxProfile profile = new FirefoxProfile();
-			File firefoxExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+			File firefoxExtension = new File(GlobalConstants.PROJECT_PATH + File.separator + "browserExtensions"
 					+ File.separator + "adblock_plus-3.14.xpi");
 			profile.addExtension(firefoxExtension);
 			FirefoxOptions f_options = new FirefoxOptions();
@@ -231,7 +231,7 @@ public class BaseTest {
 
 			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
 			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
-					GlobalConstans.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
+					GlobalConstants.PROJECT_PATH + File.separator + "browserLogs" + File.separator + "Firefox.log");
 
 			// Must delete new driver
 			// driver = new FirefoxDriver(f_options);
@@ -258,7 +258,7 @@ public class BaseTest {
 			capability.setBrowserName("chrome");
 			capability.setPlatform(Platform.WINDOWS);
 
-			File chromeExtension = new File(GlobalConstans.PROJECT_PATH + File.separator + "browserExtensions"
+			File chromeExtension = new File(GlobalConstants.PROJECT_PATH + File.separator + "browserExtensions"
 					+ File.separator + "adblock_plus_3_14_0_0.crx");
 			ChromeOptions c_options = new ChromeOptions();
 			c_options.addExtensions(chromeExtension);
@@ -335,7 +335,7 @@ public class BaseTest {
 		}
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(GlobalConstans.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appURL);
 		return driver;
 	}

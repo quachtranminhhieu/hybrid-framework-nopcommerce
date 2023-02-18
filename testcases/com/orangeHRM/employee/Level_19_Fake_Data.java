@@ -335,7 +335,7 @@ public class Level_19_Fake_Data extends BaseTest {
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Contact Details 04 - Step 08: Enter to 'Zip/Postal Code' textbox with value is: '" + empZipCode + "'");
 		myInfoPage.enterToTextboxByID(driver, empZipCode, "contact_emp_zipcode");
 
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Contact Details 04 - Step 09: Select item in 'State/Province' dropdown with value is: '" + empCountry + "'");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Contact Details 04 - Step 09: Select item in 'Country' dropdown with value is: '" + empCountry + "'");
 		myInfoPage.selectItemInDropdownByID(driver, empCountry, "contact_country");
 
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Contact Details 04 - Step 10: Enter to 'Mobile' textbox with value is: '" + empMobile + "'");

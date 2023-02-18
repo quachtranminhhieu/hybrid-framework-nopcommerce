@@ -6,7 +6,10 @@
 		<!-- <listener class-name = "reportConfig.ReportNGListener"> </listener> -->
 		<listener class-name="reportConfig.ExtentTestListenerV5"> </listener>
 		<!-- <listener class-name = "reportConfig.AllureTestListener"> </listener> -->
+		
+		<!-- Create ReportNG -->
 		<listener class-name="org.uncommons.reportng.HTMLReporter"> </listener>
+		<!-- Không nhất thiết, nhưng giúp tạo Jenkin Report, sử dụng file ở folder test-outputs rồi folder xml để tạo-->
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"> </listener>
 	</listeners>
 
@@ -16,21 +19,21 @@
 	<test name="Run on Firefox">
 		<!-- <parameter name="environment" value="testing"></parameter> -->
 		<parameter name="browser" value="firefox"></parameter>
-		<parameter name="ipAddress" value="192.168.1.152"></parameter>
-		<parameter name="port" value="5555"></parameter>
+<!-- 		<parameter name="ipAddress" value="192.168.1.152"></parameter> -->
+<!-- 		<parameter name="port" value="5555"></parameter> -->
 		<classes>
-			<class name="com.orangeHRM.employee.Level_23_Selenium_Grid" />
+			<class name="com.orangeHRM.employee.Level_19_Fake_Data" />
 		</classes>
 	</test>
 
-	<test name="Run on Chrome">
-		<!-- <parameter name="environment" value="testing"></parameter> -->
+	<!-- <test name="Run on Chrome">
+		<parameter name="environment" value="testing"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="ipAddress" value="192.168.1.152"></parameter>
 		<parameter name="port" value="5555"></parameter>
 		<classes>
 			<class name="com.orangeHRM.employee.Level_23_Selenium_Grid" />
 		</classes>
-	</test>
+	</test> -->
 
 </suite>

@@ -10,6 +10,11 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.internal.Utils;
 
+	// Áp dụng ở các file run xml
+	// Khi dùng VerifyTrue/False/Equals mà có nhiều hơn 1 false thì nó sẽ show hết tất cả lỗi vào tab Results, tab Console, vào ReportNG
+	// Nếu không dùng thì khi verify nếu có nhiều hơn 1 false thì test case vẫn sẽ báo pass => Sai
+	// Nếu không dùng thì nó chỉ show 1 false chứ không show tất cả false vào Console.
+
 public class MethodListener implements IInvokedMethodListener {
 	@Override
 	public void beforeInvocation(IInvokedMethod method, ITestResult result) {

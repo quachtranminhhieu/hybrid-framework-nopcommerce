@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -32,8 +33,8 @@ import pageUIs.orangeHRM.HRMBasePageUI;
 import pageUIs.orangeHRM.MyInfoPageUI;
 
 public class BasePage {
-	protected long longTimeout = GlobalConstans.LONG_TIMEOUT;
-	protected long shortTimeout = GlobalConstans.SHORT_TIMEOUT;
+	protected long longTimeout = GlobalConstants.LONG_TIMEOUT;
+	protected long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 	
 	protected void setTimeoutImplicit(WebDriver driver, long longTimeoutImplicit) {
 		driver.manage().timeouts().implicitlyWait(longTimeoutImplicit, TimeUnit.SECONDS);
@@ -99,7 +100,7 @@ public class BasePage {
 	}
 	
 	public void sendkeyToAlert(WebDriver driver, String textValue) {
-		waitForAlertPresence(driver).sendKeys(textValue);;
+		waitForAlertPresence(driver).sendKeys(textValue);
 	}
 	
 	public void switchToWindowByID(WebDriver driver, String windowID) {
@@ -289,11 +290,19 @@ public class BasePage {
 	}
 	
 	public boolean isElementDisplayed(WebDriver driver, String xpathLocator) {
-		return getWebElement(driver, xpathLocator).isDisplayed();
+		try {
+			return waitForElementVisible(driver, xpathLocator).isDisplayed();
+		} catch (NoSuchElementException e) {
+			return false;
+		}
 	}
 	
-	public boolean isElementDisplayed(WebDriver driver, String xpathLocator, String...dynamicValues) {
-		return waitForElementVisible(driver, xpathLocator, dynamicValues).isDisplayed();
+	public boolean isElementDisplayed(WebDriver driver, String xpathLocator, String... dynamicValues) {
+		try {
+			return waitForElementVisible(driver, getDynamicLocator(xpathLocator, dynamicValues)).isDisplayed();
+		} catch (NoSuchElementException e) {
+			return false;
+		}
 	}
 
 	public boolean isElementUndisplayed(WebDriver driver, String xpathLocator) {
@@ -302,7 +311,7 @@ public class BasePage {
 		setTimeoutImplicit(driver, longTimeout);
 		if (elements.size() == 0) {
 			return true;
-		} else if (elements.size() > 0 && elements.get(0).isDisplayed()) {
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
 			return true;
 		} else {
 			return false;
@@ -315,7 +324,7 @@ public class BasePage {
 		setTimeoutImplicit(driver, longTimeout);
 		if (elements.size() == 0) {
 			return true;
-		} else if (elements.size() > 0 && elements.get(0).isDisplayed()) {
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
 			return true;
 		} else {
 			return false;
@@ -369,7 +378,7 @@ public class BasePage {
 	public void uploadMultipleFile(WebDriver driver, String... fileNames) {
 		String fullFileName = "";
 		for (String file : fileNames) {
-			fullFileName += GlobalConstans.UPLOAD_FILE_PATH + file + "\n";
+			fullFileName += GlobalConstants.UPLOAD_FILE_PATH + file + "\n";
 		}
 		fullFileName = fullFileName.trim();
 		getWebElement(driver, BasePageUI.UPLOAD_FILE).sendKeys(fullFileName);

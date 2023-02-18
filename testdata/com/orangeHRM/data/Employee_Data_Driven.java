@@ -6,14 +6,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import commons.GlobalConstans;
+import commons.GlobalConstants;
 
 public class Employee_Data_Driven {
 	public static Employee_Data_Driven getEmployee() {
 		try {
 			ObjectMapper mapper = new ObjectMapper();
 			mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-			return mapper.readValue(new File(GlobalConstans.PROJECT_PATH + "\\testdata\\com\\orangeHRM\\data\\Employee.json"), Employee_Data_Driven.class);
+			return mapper.readValue(new File(GlobalConstants.PROJECT_PATH + "\\testdata\\com\\orangeHRM\\data\\Employee.json"), Employee_Data_Driven.class);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;

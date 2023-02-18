@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalConstans;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopCommerce.admin.AdminLoginPageObject;
@@ -72,7 +72,7 @@ public class Level_08_Switch_Role extends BaseTest {
 		userCustomerInforPage = userHomePage.openMyAccountPage(driver);
 		userHomePage = userCustomerInforPage.clickToLogoutLinkAtUserPage(driver);
 		
-		userHomePage.openPageURL(driver, GlobalConstans.ADMIN_PAGE_URL);
+		userHomePage.openPageURL(driver, GlobalConstants.ADMIN_PAGE_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPageObject(driver);
 		
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
@@ -83,7 +83,7 @@ public class Level_08_Switch_Role extends BaseTest {
 
 	@Test
 	public void Role_02_Admin_To_User() {
-		adminLoginPage.openPageURL(driver, GlobalConstans.USER_PAGE_URL);
+		adminLoginPage.openPageURL(driver, GlobalConstants.USER_PAGE_URL);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 		
 		userLoginPage = userHomePage.clickToLoginLink();

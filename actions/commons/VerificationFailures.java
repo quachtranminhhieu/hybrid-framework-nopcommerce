@@ -6,6 +6,9 @@ import java.util.List;
 
 import org.testng.ITestResult;
 
+	// Áp dụng ở BaseTest
+	// Dùng để add kết quả, message lỗi vô ReportNG
+
 public class VerificationFailures extends HashMap<ITestResult, List<Throwable>> {
 	private VerificationFailures() {
 		super();
